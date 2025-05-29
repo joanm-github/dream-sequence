@@ -2,92 +2,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - Dream Sequence: Trieste 72</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Sequence: Trieste 72 - Galería</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .lightbox:target {
+      display: block;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Galería de Dream Sequence</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#la-banda">La Banda</a></li>
-                <li><a href="#discografia">Discografía</a></li>
-                <li><a href="#giras">Giras</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="gallery">
-            <div class="gallery-item">
-                <a href="#img1">
-                    <img src="images/ganimede.jpg" alt="Portada de l'àlbum Ganimede">
-                    <div class="caption">Portada de l'àlbum 'Ganimede' (1975)</div>
-                </a>
-            </div>
-            <div class="lightbox" id="img1">
-                <img src="images/ganimede.jpg" alt="Portada de l'àlbum Ganimede">
-            </div>
-            <div class="gallery-item">
-                <a href="#img2">
-                    <img src="images/atomium1976.jpg" alt="Dream Sequence a l'Atomium, 1976">
-                    <div class="caption">Dream Sequence a l'Atomium de Brussel·les (febrer 1976)</div>
-                </a>
-            </div>
-            <div class="lightbox" id="img2">
-                <img src="images/atomium1976.jpg" alt="Dream Sequence a l'Atomium, 1976">
-            </div>
-            <div class="gallery-item">
-                <a href="#img3">
-                    <img src="images/gammede_ocean.jpg" alt="Composició visual de Ganimede">
-                    <div class="caption">Composició visual de 'Ganimede' amb motius marins</div>
-                </a>
-            </div>
-            <div class="lightbox" id="img3">
-                <img src="images/gammede_ocean.jpg" alt="Composició visual de Ganimede">
-            </div>
-            <div class="gallery-item">
-                <a href="#img4">
-                    <img src="images/urban_scene.jpg" alt="Instantània urbana amb membres de Dream Sequence">
-                    <div class="caption">Instantània urbana amb membres de Dream Sequence (data i lloc desconeguts)</div>
-                </a>
-            </div>
-            <div class="lightbox" id="img4">
-                <img src="images/urban_scene.jpg" alt="Instantània urbana amb membres de Dream Sequence">
-            </div>
-            <div class="gallery-item">
-                <a href="#img5">
-                    <img src="images/ganymede_tour76.jpg" alt="Cartell de la Gira Ganimede 1976">
-                    <div class="caption">Cartell de la gira 'Ganymede Tour '76' (Benelux)</div>
-                </a>
-            </div>
-            <div class="lightbox" id="img5">
-                <img src="images/ganymede_tour76.jpg" alt="Cartell de la Gira Ganimede 1976">
-            </div>
-            <div class="gallery-item">
-                <a href="#img6">
-                    <img src="images/live78_tour.jpg" alt="Cartell de la gira Live '78">
-                    <div class="caption">Cartell de la gira 'Live 78' (Austràlia / Canadà)</div>
-                </a>
-            </div>
-            <div class="lightbox" id="img6">
-                <img src="images/live78_tour.jpg" alt="Cartell de la gira Live '78">
-            </div>
-            <div class="gallery-item">
-                <a href="#img7">
-                    <img src="images/trieste1970_portrait.jpg" alt="Retrat de les membres de Dream Sequence a Trieste">
-                    <div class="caption">Retrat de les membres de Dream Sequence a Trieste (1970)</div>
-                </a>
-            </div>
-            <div class="lightbox" id="img7">
-                <img src="images/trieste1970_portrait.jpg" alt="Retrat de les membres de Dream Sequence a Trieste">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Dream Sequence</p>
-    </footer>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-gray-900 text-white p-6 shadow-md">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-3xl font-bold">Dream Sequence: Trieste 72 - Galería</h1>
+      <nav class="mt-4 md:mt-0">
+        <ul class="flex space-x-6 text-lg">
+          <li><a href="index.html" class="hover:underline">Inicio</a></li>
+          <li><a href="#la-banda" class="hover:underline">La Banda</a></li>
+          <li><a href="#discografia" class="hover:underline">Discografía</a></li>
+          <li><a href="#giras" class="hover:underline">Giras</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-10">
+    <section id="galeria" class="mb-16">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">Galería</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="gallery-item">
+          <a href="#img1">
+            <img src="images/ganimede.jpg" alt="Portada de l'àlbum Ganimede" class="w-full h-auto rounded shadow">
+            <div class="caption mt-2 text-center">Portada de l'àlbum 'Ganimede' (1975)</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#img2">
+            <img src="images/atomium1976.jpg" alt="Dream Sequence a l'Atomium, 1976" class="w-full h-auto rounded shadow">
+            <div class="caption mt-2 text-center">Dream Sequence a l'Atomium de Brussel·les (febrer 1976)</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#img3">
+            <img src="images/gammede_ocean.jpg" alt="Composició visual de Ganimede" class="w-full h-auto rounded shadow">
+            <div class="caption mt-2 text-center">Composició visual de 'Ganimede' amb motius marins</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#img4">
+            <img src="images/urban_scene.jpg" alt="Instantània urbana amb membres de Dream Sequence" class="w-full h-auto rounded shadow">
+            <div class="caption mt-2 text-center">Instantània urbana amb membres de Dream Sequence (data i lloc desconeguts)</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#img5">
+            <img src="images/ganymede_tour76.jpg" alt="Cartell de la Gira Ganimede 1976" class="w-full h-auto rounded shadow">
+            <div class="caption mt-2 text-center">Cartell de la gira 'Ganymede Tour '76' (Benelux)</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#img6">
+            <img src="images/live78_tour.jpg" alt="Cartell de la gira Live '78" class="w-full h-auto rounded shadow">
+            <div class="caption mt-2 text-center">Cartell de la gira 'Live 78' (Austràlia / Canadà)</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#img7">
+            <img src="images/trieste1970_portrait.jpg" alt="Retrat de les membres de Dream Sequence a Trieste" class="w-full h-auto rounded shadow">
+            <div class="caption mt-2 text-center">Retrat de les membres de Dream Sequence a Trieste (1970)</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white text-center p-4">
+    <p>&copy; 2023 Dream Sequence</p>
+  </footer>
+
+  <!-- Lightbox for images -->
+  <div class="lightbox fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" id="img1">
+    <img src="images/ganimede.jpg" alt="Portada de l'àlbum Ganimede" class="max-w-full max-h-full">
+  </div>
+  <div class="lightbox fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" id="img2">
+    <img src="images/atomium1976.jpg" alt="Dream Sequence a l'Atomium, 1976" class="max-w-full max-h-full">
+  </div>
+  <div class="lightbox fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" id="img3">
+    <img src="images/gammede_ocean.jpg" alt="Composició visual de Ganimede" class="max-w-full max-h-full">
+  </div>
+  <div class="lightbox fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" id="img4">
+    <img src="images/urban_scene.jpg" alt="Instantània urbana amb membres de Dream Sequence" class="max-w-full max-h-full">
+  </div>
+  <div class="lightbox fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" id="img5">
+    <img src="images/ganymede_tour76.jpg" alt="Cartell de la Gira Ganimede 1976" class="max-w-full max-h-full">
+  </div>
+  <div class="lightbox fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" id="img6">
+    <img src="images/live78_tour.jpg" alt="Cartell de la gira Live '78" class="max-w-full max-h-full">
+  </div>
+  <div class="lightbox fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" id="img7">
+    <img src="images/trieste1970_portrait.jpg" alt="Retrat de les membres de Dream Sequence a Trieste" class="max-w-full max-h-full">
+  </div>
 </body>
 </html>
